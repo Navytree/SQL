@@ -242,3 +242,14 @@ from Author a
 join [File] f on a.id = f.authorId where len(nickname) between len(name)-2 and len(name)+2;
 
 
+
+
+
+-- Cleanup
+
+-- USE master;
+-- GO
+-- ALTER DATABASE Disk SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+-- GO
+-- DROP DATABASE Disk;
+-- GO
