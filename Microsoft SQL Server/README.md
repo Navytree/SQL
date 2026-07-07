@@ -12,6 +12,7 @@ This folder contains various databases built from scratch using Microsoft SQL Se
 ## Projects
 * `Disk` - Project mimicking disk, contains tables about Author and File
 * `Weather data` - Project to analyze weather data (mock data used, including future dates)
+* `Praline shop` - Project to analyze packages, pralines and daily transactions (mock data used for tables: Purchases, Morning Delivery and Closing Stock).
 
 ## Setup
 To run any of the projects inside this folder, you need access to a running Microsoft SQL Server instance and an SQL client (like Visual Studio Code, SSMS, or Azure Data Studio).
