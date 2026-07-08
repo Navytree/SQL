@@ -149,8 +149,6 @@ CREATE TABLE [Morning Delivery] (
     FOREIGN KEY (DateId) REFERENCES Date(Id)
 )
 
-CREATE NONCLUSTERED INDEX IX_ClosingStock_Date_Praline ON [Closing Stock](DateId, PralineId); 
-
 -- for simplicity i decided to have a fixed weight of 5kg every morning
 -- i am aware that in real bussiness model we would not get more produce that is not popular
 -- until we would sell most of it
@@ -185,6 +183,8 @@ CREATE TABLE [Closing Stock] (
     DateId INT NOT NULL,
     FOREIGN KEY (DateId) REFERENCES Date(Id)
 )
+
+CREATE NONCLUSTERED INDEX IX_ClosingStock_Date_Praline ON [Closing Stock](DateId, PralineId);     
 
 INSERT INTO [Closing Stock] ( weight, DateId, PralineId ) VALUES
 -- Day 1 (2026-06-06)
