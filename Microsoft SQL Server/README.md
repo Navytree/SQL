@@ -6,8 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This folder contains various databases built from scratch using Microsoft SQL Server language
-
+This folder contains various databases built from scratch using T-SQL
 
 ## Projects
 * `Disk` - Project mimicking disk, contains tables about Author and File
