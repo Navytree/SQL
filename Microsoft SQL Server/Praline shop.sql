@@ -1,5 +1,9 @@
-CREATE DATABASE PralineShop; -- creation of database
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'PralineShop')-- creation of database
+BEGIN
+    CREATE DATABASE PralineShop;
+END
 GO
+
 USE PralineShop; -- start of database
 GO
 
